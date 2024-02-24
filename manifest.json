@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Meeting Hue",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://meet.google.com/*",
+    "*://*.zoom.us/*",
+    "*://teams.microsoft.com/*"
+  ]
+}
